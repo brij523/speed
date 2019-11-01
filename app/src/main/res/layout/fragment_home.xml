@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <androidx.core.widget.NestedScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+ <androidx.recyclerview.widget.RecyclerView
+     android:layout_marginTop="@dimen/_20sdp"
+     android:id="@+id/recycleMenu"
+     android:layout_width="match_parent"
+     android:fadeScrollbars="true"
+     android:layout_height="@dimen/_100sdp"/>
+
+ <TextView
+     android:id="@+id/events_label"
+     android:layout_marginTop="@dimen/_30sdp"
+     android:layout_marginLeft="@dimen/_10sdp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textAppearance="@style/text_14sdp_bold_black"
+     android:layout_below="@id/recycleMenu"
+     android:text="@string/events" />
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardEvents"
+    android:layout_below="@id/events_label"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="@dimen/_150sdp">
+ <RelativeLayout
+     android:background="@drawable/sample_image"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+  <RelativeLayout
+      android:background="@color/transparent_black"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  <TextView
+      android:id="@+id/eventsTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_20sdp"
+      android:text="2019 INTERNATIONAL \n SWIMMING LEAGUE ,TEXAS "
+      android:textAppearance="@style/text_18sdp_bold_white"
+      />
+  <TextView
+      android:id="@+id/eventsDate"
+      android:layout_below="@id/eventsTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20sdp"
+      android:layout_marginLeft="@dimen/_20sdp"
+      android:text="Date : 24-08-2019"
+      android:textAppearance="@style/text_12sdp_bold_white"
+      />
+  <TextView
+      android:id="@+id/eventsTime"
+      android:layout_below="@id/eventsDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/_20sdp"
+      android:layout_marginStart="@dimen/_20sdp"
+      android:text="Time : 01:30 pm"
+      android:textAppearance="@style/text_12sdp_bold_white"
+      />
+
+
+
+ </RelativeLayout>
+ </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+ <TextView
+     android:id="@+id/todayClasses_label"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/today_classes"
+     android:layout_below="@id/cardEvents"
+     android:textAppearance="@style/text_14sdp_bold_black"
+     android:layout_marginLeft="@dimen/_20sdp"
+     android:layout_marginStart="@dimen/_20sdp"
+     android:layout_marginTop="@dimen/_10sdp"
+     />
+</RelativeLayout>
+ </androidx.core.widget.NestedScrollView>
+</layout>
