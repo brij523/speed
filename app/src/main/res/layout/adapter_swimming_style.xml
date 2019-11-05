@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp">
+
+    <TextView
+        android:id="@+id/swimmingStyleName"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/text_14sdp_bold_black"
+        android:text="Free Style"
+        />
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/view_all_label"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:textAppearance="@style/text_12sdp_blue"
+        android:layout_width="wrap_content"
+        android:text="@string/view_all"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/swimmingStyleName"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/swimmingStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+</layout>

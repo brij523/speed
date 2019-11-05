@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.myapplication.fragment.HomeFragment;
 import com.myapplication.R;
+import com.myapplication.fragment.MyCoachFragment;
 import com.myapplication.helper.Helper;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,10 +29,12 @@ public class DashboardActivity extends AppCompatActivity {
 
                     Helper.fragment_transaction(getSupportFragmentManager(),new HomeFragment(),R.id.mainframe1);
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_profile:
+                    Helper.fragment_transaction(getSupportFragmentManager(),new MyCoachFragment(),R.id.mainframe1);
+
 
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_account:
 
                     return true;
             }
